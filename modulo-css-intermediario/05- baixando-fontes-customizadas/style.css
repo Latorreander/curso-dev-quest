@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "milky";
+  src: url(./fonts/MilkyNice.otf), url(./fonts/MilkyNice.ttf);
+}
+
+h1 {
+  font-family: "milky", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+}
+
+@font-face {
+  font-family: "peach_milky";
+  src: url(./fonts/peach_milk.ttf);
+}
+
+p {
+  font-family: "peach_milky";
+  font-size: 40px;
+}
