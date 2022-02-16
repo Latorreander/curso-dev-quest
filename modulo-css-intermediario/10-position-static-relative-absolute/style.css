@@ -24,6 +24,23 @@
 }
 
 .elemento-absoluto {
-  /* position: absolute; */
+  position: absolute;
   background-color: darkcyan;
+
+}
+
+.elemento-absoluto-com-filho {
+  position: absolute;
+  background-color: blueviolet;
+  width: 150px;
+  height: 150px;
+  right: 0;
+  top: 0;
+}
+
+.elemento-relativo-com-pai {
+  position: relative;
+  background-color: chartreuse;
+  width: 350px;
+  height: 350px;
 }
