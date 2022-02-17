@@ -29,11 +29,11 @@ p {
   height: 540px;
 }
 
-.bg-position {
+/* .bg-position {
   background-position: center;
   height: 540px;
   background-repeat: no-repeat;
-}
+} */
 
 /* -----------------------
 ----FORMA ENCURTADA----
@@ -41,4 +41,5 @@ p {
 
 .bg-position {
   background: #000 url("./images/cat.png") no-repeat center;
+  height: 540px;
 }
