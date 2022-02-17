@@ -15,12 +15,13 @@
 .elemento-estatico {
   position: static;
   background-color: crimson;
+
 }
 
 .elemento-relativo {
   position: relative;
   background-color: coral;
-  left: 100px;
+   
 }
 
 .elemento-absoluto {
