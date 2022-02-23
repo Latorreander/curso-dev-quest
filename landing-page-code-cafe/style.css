@@ -1,6 +1,12 @@
+html {
+  font-size: 62.5%;
+}
+
+
 body {
   max-width: 1440px;
   margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 .cabecalho {
@@ -15,16 +21,17 @@ body {
   display: inline-block;
 }
 
-.cabecalho  h1 {
-  width: 85px;
+.cabecalho h1 {
+  font-size: 0;
+  /* width: 85px;
   height: 85px;
   background-color: #afac9c;
   font-size: 28px;
   display: inline-block;
   position: absolute;
   padding: 10px;
-  left: 100px;
-}
+  left: 100px; */
+} 
 
 .cabecalho nav {
   display: inline-block;
