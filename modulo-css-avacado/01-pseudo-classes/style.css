@@ -1,0 +1,44 @@
+/* p:first-child {
+    color: aquamarine;
+ 
+}
+
+p:last-child {
+    color: blue;
+
+}
+
+p:not(.padrao){
+    color: red;
+}
+
+p:nth-child(odd){
+    background-color: blueviolet; */
+}
+
+/* li:nth-child(even) {
+    background-color: brown;
+} */
+
+/* li:nth-child(3n) {
+    background-color: cadetblue;
+} */
+
+/* li:nth-child(n+1):nth-child(-n+3){
+    background-color: cadetblue;
+} */
+
+.nth-child li:nth-child(1) {
+    background-color: green;
+}
+
+.last-child li:nth-last-child(1){
+    background-color: green;
+}
+
+p:only-child {
+    background-color: grey;
+}
+
+
+
