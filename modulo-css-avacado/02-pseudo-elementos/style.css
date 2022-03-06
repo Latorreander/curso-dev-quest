@@ -1,0 +1,38 @@
+.first-letter::first-letter{
+    color: red;
+}
+
+/* 
+----com o pseudo elemento first letter, podemos estilizar a primeira letra do elemento, funicona com varios seletores entre eles estão: paragrafos ids e classes--- */
+
+
+
+.first-line::first-line{
+    color: blue;
+}
+
+
+/* ----com o pseudo elemento first line é a mesma coisa----- */
+
+.first-line::first-letter{
+    color:red;
+}
+/* ---podemos mesclar first-letter com first-line no mesmo parágrafo---- */
+
+li::marker{
+    color: red;
+    font-size: 25px;
+}
+
+.after::after{
+    content: "";
+    background: url(favicon.ico) center center
+    no-repeat;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+.before::before{
+    content: url(favicon.ico);
+}

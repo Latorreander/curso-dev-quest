@@ -1,0 +1,30 @@
+
+
+/* --variavel global que coloca o estilo em toda a pagina-- */
+
+:root {
+    --cor-padrao: blue;
+    --tamanho-de-fonte-padrao: 20px;
+}
+/* --h2 com uma variavel local-- */
+h2 {
+    --cor-padrao: violet;
+    --tamanho-da-fonte-padrao: 50px;
+    color: var(--cor-padrao,green);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+
+h3 {
+    color: var(--cor-padrao, green);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+
+p {
+    color: var(--cor-padrao, green);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+} 
+
+span {
+    color: var(--cor-padrao, green);
+    font-size: var(--tamanho-de-fonte-padrao, 20px,);
+}

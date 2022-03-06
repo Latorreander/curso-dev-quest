@@ -1,4 +1,4 @@
-/* p:first-child {
+p:first-child {
     color: aquamarine;
  
 }
@@ -8,13 +8,13 @@ p:last-child {
 
 }
 
-p:not(.padrao){
+/* p:not(.padrao){
     color: red;
-}
+} */
 
-p:nth-child(odd){
-    background-color: blueviolet; */
-}
+/* p:nth-child(odd){
+    background-color: blueviolet;
+} */
 
 /* li:nth-child(even) {
     background-color: brown;

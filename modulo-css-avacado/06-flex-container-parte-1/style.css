@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+
+/* ---com o flex flow podemos atribuir o flex-direction junto com o wrap, ou seja definimos se o elemento ira quebrar em linha ou em coluna--- */
+
+.container .item {
+    font-size: 30px;
+}
+
+
+.container div {
+    background-color: aquamarine;
+    color: black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;  
+}

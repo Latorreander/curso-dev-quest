@@ -1,0 +1,53 @@
+.paragrafo {
+    color: red;
+}
+
+#menu {
+    color: blue;
+}
+
+* {
+    padding: 0px;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+.titulo.vermelho {
+    color: red;
+}
+
+.titulo.laranja {
+    color: orange;
+}
+
+/* p, span {
+    color: aquamarine;
+    font-size: 20px;
+} */
+
+.sobre .texto {
+    color: cornflowerblue;
+}
+
+/* div > p{
+    color: chocolate;
+
+} */
+
+div + p{
+    color: chocolate;
+}
+
+a[target=_blank]{
+    color: red;
+}
+
+a[href="google.com"]{
+    color: violet;
+
+}
+
+
+
