@@ -1,9 +1,11 @@
 
 
+
 .flex {
     display: flex;
     width: 960px;
     max-width: 100%;
+   flex-wrap: wrap;
 }
 
 .flex img {
@@ -12,9 +14,8 @@
 .coluna {
     display: flex;
     flex-direction: column;
-    flex: 1;
     margin: 10px;
-    width: 250px;
+   flex: 0 1 250px;
 }
 
 .coluna .botao {

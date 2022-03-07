@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu{
+    display: flex;
+    
+}
+ .menu li{
+     margin-left: 15px;
+ }
+
+ @media(max-width: 425px){
+     .header .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+     }
+
+     .menu{
+        display: block;
+        margin-top: 30px;
+     }
+
+     .menu li{
+        margin-left: 20px;
+        display: inline;
+        
+     }
+
+     nav{
+         display: block;
+         width: 100%;
+         text-align: center;
+     }
+
+ }
+
