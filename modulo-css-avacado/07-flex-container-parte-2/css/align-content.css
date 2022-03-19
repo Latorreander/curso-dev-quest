@@ -24,13 +24,16 @@
 }
 
 .space-between {
+    width: 300px;
     align-content: space-between;
 }
 
 .space-around {
+    width: 300px;
     align-content: space-around;
 }
 
 .space-evenly {
+    width: 300px;
     align-content: space-evenly;
 }

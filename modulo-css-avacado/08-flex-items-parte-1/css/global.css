@@ -9,5 +9,8 @@
   font-size: 20px;
   margin: 5px;
   text-align: center;
+}
+
+.shrink {
   height: 100px;
 }
