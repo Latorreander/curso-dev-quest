@@ -1,0 +1,43 @@
+.verde-claro{
+    background-color: aquamarine;
+}
+
+.azul{
+    background-color: cornflowerblue;
+}
+
+.rosa{
+    background-color: hotpink;
+}
+
+.laranja-escuro{
+    background-color: orangered;
+}
+
+.verde-forte{
+    background-color: green;
+}
+
+.marron{
+    background-color: burlywood;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 15px;
+}
+
+.verde-claro{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* ---ABREVIADO--- */
+    /* grid-column: 1 / 3; */
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* ---ABREVIADO--- */
+    /* grid-row: 1 / 3; */
+
+}  
