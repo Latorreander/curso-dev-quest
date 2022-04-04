@@ -1,0 +1,73 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "hero hero hero hero"
+    "about about about about"
+    "services services services services"
+    "projects projects projects projects"
+    "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 1, 6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background-color: #fff;
+  grid-area: header;
+}
+
+.hero {
+  /* background-color: blue; */
+  grid-area: hero;
+}
+
+.about {
+  background-color: blueviolet;
+  grid-area: about;
+}
+
+.services {
+  background-color: burlywood;
+  grid-area: services;
+}
+
+.projects {
+  background-color: cadetblue;
+  grid-area: projects;
+}
+
+.footer {
+  background-color: chartreuse;
+  grid-area: footer;
+}
+
+ .header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  min-height: 7.5rem;
+}
+
+.header-container .logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header h1:hover {
+  transition: 0.3s ease-in-out;
+  color: #FF926A;
+}
+
+
+
+
+
+
+

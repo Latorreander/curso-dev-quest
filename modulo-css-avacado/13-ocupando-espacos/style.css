@@ -29,15 +29,52 @@
     grid-gap: 15px;
 }
 
+.span {
+    grid-column: 1 / span 2;
+}
+
 .verde-claro{
-    grid-column-start: 1;
-    grid-column-end: 3;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
     /* ---ABREVIADO--- */
     /* grid-column: 1 / 3; */
+    /* a propriedade span dará o mesmo efeito do start e do end */
+    /* grid-column: 1 / span 2; */
 
-    grid-row-start: 1;
-    grid-row-end: 3;
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
     /* ---ABREVIADO--- */
     /* grid-row: 1 / 3; */
+    /* grid-row: 1 / span 2;  */
 
+/*---ORDEM DO GRID AREA---
+    grid-row-start
+    grid-column-star
+    grid-row-end
+    grid-colmun-end
+    */
+    grid-area: 1 / 1 / 3 / 3;
+    
 }  
+
+
+.azul {
+    grid-area: 1 / 3 / 1 / 6;
+}
+
+.rosa {
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+.laranja-escuro {
+    grid-area: 2 / 3 / 4 / 5;
+}
+
+.verde-forte {
+    grid-area: 2 / 5 / 2 / 5;
+}
+
+.marron {
+    grid-area: 3 / 5 / 3 / 5;
+}
+
