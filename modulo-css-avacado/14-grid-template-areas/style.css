@@ -27,8 +27,9 @@
     display: grid;
     /* grid-template-areas: "cabecalho cabecalho cabecalho"
     "menu secao-principal aside" "rodape rodape rodape"; */
-    grid: "cabecalho cabecalho cabecalho" 30px 
-    "menu secao-principal aside" 200px "rodape rodape rodape" 30px / 160px auto 60px;
+    grid:   "cabecalho cabecalho cabecalho" 30px
+            "menu secao-principal aside" 200px 
+            "rodape rodape rodape" 30px / 160px auto 60px;
 }
 
 .cabecalho {

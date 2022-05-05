@@ -6,7 +6,7 @@ p {
 
 .bg {
   background-color: lightgreen;
-  background-image: url("./images/cat.png");
+  background-image: url("images/cat.png");
 }
 
 .bg-image {
