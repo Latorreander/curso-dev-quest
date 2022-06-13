@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+</head>
+<body>
+    <h1>Post do Twitter</h1>
+    <article class="post">
+        <p><strong>Anderson Latorre</strong> <span>@latorreander408 - 10 min</span></p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veritatis aliquid inventore consequatur aspernatur sint quidem reiciendis. Dolores ipsum quas dolore laboriosam temporibus aperiam, blanditiis obcaecati pariatur quam est molestiae.
+        </p>
+
+        <br>
+
+        <div class="comentarios"></div>
+        <h3>Comentários:</h3>
+
+        <input name="novo-comentario" type="text" placeholder="Digite o seu comentário">
+
+        <button onclick="adicionarComentario()">Adicionar comentário</button>
+
+        <br>
+
+        <div id="novos-comentários"></div>
+    </article>
+    <script src="index.js"></script>
+</body>
+</html>
