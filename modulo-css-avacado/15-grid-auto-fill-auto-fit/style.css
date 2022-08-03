@@ -6,7 +6,7 @@ body {
     display: grid;
     padding: 3em;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
 }
 
 .container p{

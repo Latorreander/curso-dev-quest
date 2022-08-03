@@ -1,7 +1,7 @@
 let usuario = {
     nome: 'Anderson',
     excluir: function(){
-        console.log(`O usuário ${this.nome} foi exluído!`);
+        console.log(`O usuário ${this.nome} foi excluído!`);
     }
 
 }

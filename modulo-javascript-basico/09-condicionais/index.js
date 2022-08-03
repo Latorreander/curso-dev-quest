@@ -23,7 +23,7 @@ let nomeSerie = prompt('Diga o nome de uma série:')
 // }
 
 // forma menos verbosa com operador ternário
-// condicao ? console.log('true') : consloe.log('false')
+// condicao ? console.log('true') : console.log('false')
 
 true ? console.log('condição verdadeira') : console.log('condição falsa')
 

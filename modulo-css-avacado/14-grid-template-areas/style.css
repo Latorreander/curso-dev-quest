@@ -3,6 +3,16 @@
     margin: 0;
 }
 
+.container {
+   display: grid;
+   /* grid-template-areas: "cabecalho cabecalho cabecalho"
+                        "menu secao-principal aside"
+                        "rodape rodape rodape"; */
+    grid: "cabecalho cabecalho cabecalho" 100px 
+    "menu secao-principal aside" 400px 
+    "rodape rodape rodape" 80px / 150px auto 200px
+}
+
 .cabecalho {
     background-color: aquamarine;
 }
@@ -23,14 +33,6 @@
     background-color: green;
 }
 
-.container {
-    display: grid;
-    /* grid-template-areas: "cabecalho cabecalho cabecalho"
-    "menu secao-principal aside" "rodape rodape rodape"; */
-    grid:   "cabecalho cabecalho cabecalho" 30px
-            "menu secao-principal aside" 200px 
-            "rodape rodape rodape" 30px / 160px auto 60px;
-}
 
 .cabecalho {
     grid-area: cabecalho;

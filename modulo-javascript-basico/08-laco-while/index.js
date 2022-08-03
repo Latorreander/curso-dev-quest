@@ -21,5 +21,5 @@
      i++
  }while(i <= 5)
  
- //o do executa e deposi testa, jao while testa deposi executa
+ //o do executa e depois testa, ja o while testa depois executa
 
