@@ -1,10 +1,10 @@
-const pessoas = ['Roberto', 'Ricardo', 'Raphael']
-console.log(...pessoas);
+// const pessoas = ['Roberto', 'Ricardo', 'Raphael']
+// console.log(...pessoas);
 
 /*ANTES TERÍAMOS QUE CONCATENAR DOIS ARRAYS COM A FUNÇÃO 'CONCAT'*/
 
-// let pessoas1 = ['Roberto', 'Ricardo', 'Raphael']
-// let pessoas2 = ['Pedro', 'João','Paulo']
+let pessoas1 = ['Roberto', 'Ricardo', 'Raphael']
+let pessoas2 = ['Pedro', 'João','Paulo']
 
 
 // pessoas1 = pessoas1.concat(pessoas2)
@@ -26,4 +26,4 @@ const objetoClonado = {...pessoa1}
 console.log(pessoa1);
 console.log(objetoClonado);
 
-// PODEMOS ALTERAR O OBJETOI CLONADO SEM MUDAR O ORIGINAL
+// PODEMOS ALTERAR O OBJETO CLONADO SEM MUDAR O ORIGINAL

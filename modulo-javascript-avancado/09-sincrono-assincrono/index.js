@@ -8,7 +8,7 @@ function colocarAguaPraFerver(){
 }
 
 function prepararPraPassarOCafe(){
-    console.log('pegar o póde café');
+    console.log('pegar o pó de café');
     console.log('pegar o filtro de café');
     console.log('colocar o pó no filtro');
     console.log('colocar o filtro em cima da xícara');
