@@ -1,4 +1,4 @@
-const taxaDeEntrega = 0.2
+const taxaDeEntrega = 0.2;
 
 const calcularValorPedido = (pedido) => {
   const valorDosProdutos = pedido.itens
