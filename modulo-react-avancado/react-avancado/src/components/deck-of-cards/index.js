@@ -5,6 +5,7 @@ import  './deck-of-cards.css'
 
 async function createDeck(){
     const response = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1')
+    console.log(response)
     const deck =  await response.json()
     return deck.deck_id
 }
