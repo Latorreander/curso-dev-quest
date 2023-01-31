@@ -1,36 +1,43 @@
-// let jogo1 = {
-//     nome: 'Final Fantasy'
-// }
+let jogo1 = {
+    nome: 'Final Fantasy'
+}
 
-// let jogo2 = {
-//     nome: 'Fallout'
-// }
+let jogo2 = {
+    nome: 'Fallout'
+}
+
+let videoGame = {
+    nome: 'Xbox',
+    valor: 3000,
+    jogos: [jogo1, jogo2]
+}
 
 let jogo3 = {
     nome: 'Fifa'
 }
 
-// let videoGame ={
-//     nome: 'xbox',
-//     valor: 3000,
-//     jogos: [jogo1, jogo2]
-// }
+videoGame.jogos.push(jogo3)
+console.log(videoGame.jogos)
 
-// foi adicionado o terceiro jogo pelo push
-//também poderiamos colocar a propriedade do objeto direto dentro do array:
+//Também podemos colocar objetos dentro de um array sem precisar instância-los:
 
-let videoGame ={
-    nome: 'xbox',
-    valor: 3000,
-    jogos: [
-        {nome: 'Final Fantasy'}, 
-        {nome: 'Fallout'}
-    ]
+let videoGame2 = {
+  nome: 'Xbox',
+  valor: 3000,
+  jogos: [
+    { nome:  'God Of War'}, 
+    { nome: 'Days Gone' }
+
+  ]
 }
 
-videoGame.jogos.push(jogo3)
+console.log(videoGame2.jogos);
 
-console.log(videoGame.jogos);
+
+//nesse caso os jogos 'Goid Of War e Days Gone não foram instanciados ou seja não foram atribuídos a uma variável, e mesmo assim foram inseridos dentro do array de jogos
+
+
+
 
 //aqui um exemplode objeto dentro de objeto:
 
