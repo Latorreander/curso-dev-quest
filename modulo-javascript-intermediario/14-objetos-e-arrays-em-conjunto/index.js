@@ -32,9 +32,15 @@ let videoGame2 = {
 }
 
 console.log(videoGame2.jogos);
+videoGame2.jogos.push({nome: 'The Last Of Us'})
+console.log(videoGame2.jogos)
+
 
 
 //nesse caso os jogos 'Goid Of War e Days Gone não foram instanciados ou seja não foram atribuídos a uma variável, e mesmo assim foram inseridos dentro do array de jogos
+
+
+//da mesma forma do exemplo de cima também podemos adicionar com o push() um objeto dessa vez não instanciado dentro do array jogos
 
 
 
