@@ -1,7 +1,7 @@
 let ferverAgua = (chaleiraEstaNoFogao, fogaoEstaLigado) => {
   return new Promise((resolve, reject) => {
 
-      if(typeof chaleiraEstaNoFogao != 'booleano') throw "Somente o tipo booleano é aceito"
+      if(typeof chaleiraEstaNoFogao != 'boolean') throw "Somente o tipo booleano é aceito"
 
       if(chaleiraEstaNoFogao && fogaoEstaLigado){
           console.log('Passo 1 finalizado: Água fervida');
@@ -44,11 +44,11 @@ async function iniciarProcessoDeFazerCafe() {
       const cafePassado = await passarOCafe(aguaFervida);
       const cafeTomado = await tomarCafe(cafePassado);
       const xicaraLavada = await lavarXicara(cafeTomado);
-
+      
     }catch(err){
       console.log(err);
     }finally{
-      console.log("Finalizado o ritual do café, bora trabalhar");
+      console.log('ritual do café concluído, bora trabalhar!')
     }
 }
 iniciarProcessoDeFazerCafe();

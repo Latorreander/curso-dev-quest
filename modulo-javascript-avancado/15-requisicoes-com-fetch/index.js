@@ -1,26 +1,52 @@
-document.getElementById('tirar-carta').addEventListener('click',()=>{
-    tirarUmaCartaAleatoriaDoBaralho()
-})
+document.getElementById("tirar-carta").addEventListener("click", () => {
+    tirarUmaCartaAleatoriaDoBaralho();
+});
 
-criarBaralhoEmbaralhado = async () => {
-  const url = "http://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1";
+async function criarBaralhoEmbaralhado() {
+    const url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1";
+    const resposta = await fetch(url);
+    return await resposta.json();
+}
 
-  const resposta = await fetch(url);
-  return await resposta.json();
-};
+async function tirarUmaCarta(deck_id) {
+    const url = `https://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=1`;
+    const resposta = await fetch(url);
+    return await resposta.json();
+}
 
-tirarUmaCarta = async (deck_id) => {
-  const url = `http://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=2`;
-  const resposta = await fetch(url);
-  return await resposta.json();
-};
+async function tirarUmaCartaAleatoriaDoBaralho() {
+    const baralho = await criarBaralhoEmbaralhado();
+    const carta = await tirarUmaCarta(baralho.deck_id);
+    const imagemCarta = carta.cards[0].image;
 
-tirarUmaCartaAleatoriaDoBaralho = async () => {
-  const baralho = await criarBaralhoEmbaralhado();
-  const carta = await tirarUmaCarta(baralho.deck_id);
-  const imagemCarta1 = carta.cards[0].image;
-  document.getElementById("carta1").src = imagemCarta1
-
-};
-
+    document.getElementById("carta1").src = imagemCarta;
+}
 tirarUmaCartaAleatoriaDoBaralho();
+
+//--------------------------------------------------------------------------
+
+
+
+// document.getElementById("tirar-carta").addEventListener("click", () => {
+//     tirarUmaCarta();
+// });
+
+// async function criarBaralhoEmbaralhado() {
+//     const url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1";
+//     const resposta = await fetch(url);
+//     return await resposta.json();
+// }
+
+// async function tirarUmaCarta() {
+
+//     const baralho = await criarBaralhoEmbaralhado();
+//     const url = `https://deckofcardsapi.com/api/deck/${baralho.deck_id}/draw/?count=1`;
+//     const resposta = await fetch(url);
+//     const carta = await resposta.json();
+//     const imagemCarta = carta.cards[0].image;
+//     document.getElementById("carta1").src = imagemCarta;
+// }
+
+// tirarUmaCarta();
+
+
